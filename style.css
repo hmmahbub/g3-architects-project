@@ -16,7 +16,7 @@ nav{
 }
 .nav-title{
     color: #131313;
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 700;
 }
 nav > ul {
@@ -78,12 +78,13 @@ nav li a{
 
 /* start main sec style */
 main{
-    width: 1440px;
+    width: 100%;
     height: auto;
-    margin: 0 auto;
+    margin: 70px auto;
 }
 
 /* style team sec start */
+
 .teams-container{
         display: flex;
         align-items: center;
@@ -92,7 +93,7 @@ main{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    margin-left: 20px;
+    margin-left: 1.5rem;
 }
 .teams-content{
     padding-left: 70px;
@@ -100,32 +101,31 @@ main{
 }
 .teams-title{
     width: 468px;
-    font-size: 2.8rem;
+    font-size: 2.5rem;
 }
-.gray{
+.teams-title .gray{
     color: #727272;
     font-size: 45px;
     font-weight: 500;
 }
-.kala{
+
+.teams-title .black-text{
     color: #131313;
     font-size: 45px;
     font-weight: 700;
 }
-.orange{
+.teams-title .orange{
     color: #FF900E;
     font-size: 45px;
     font-weight: 700;
 }
 .teams-desc{
-    width: 537px;
+    width: 530px;
     color: #727272;
     line-height: 26px;
     margin-bottom: 30px;
 }
 /* style team sec end */
-
-
 
 /* end main sec style */
 
@@ -134,20 +134,38 @@ main{
 
 /* responsive style */
 /* mobile devices */
-@media screen and (max-width: 576px){
+@media screen and (max-width: 576px) {
     header{
         padding: 20px;
-        justify-content: center
     }
     nav{
-    flex-direction: column;
+        flex-direction: column;
+    }
+    .banner-desc{
+        line-height:normal;
+    }
+    .teams-container{
+        flex-direction: column;
+        align-items: normal;
+    }
+    .teams-img-container{
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+    }
+    .teams-content{
+        width: 300px;
+        padding: 0px;
+        margin: 0 auto;
+    }
+    
+    .teams-title{
+    width: 300px;
+    font-size: 2rem;
+    }
+    .teams-desc{
+        width: 350px;
+    }
 }
-    nav > li{
-    flex-direction: column;
-    margin-right: 0px;
-}
-/* main style *
-
 
 /* tablet devices */
 @media screen and (min-width: 576px) and (max-width: 960px) {
