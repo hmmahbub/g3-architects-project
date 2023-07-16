@@ -212,17 +212,57 @@ main{
     height: 200px;
     border-radius: 8px;
     border: 1px solid #FF900E;
-    display: block;
-    align-items: center;
+
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-}
-/* .card> img, .card-status, .card-title{
     align-items: center;
-    justify-content: center;    
-} */
+    text-align: center;
+}
+/* card sec end */
+
+/* sponsor sec start */
+.sponsor-title{
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+}
+.sponsor-desc{
+    color: #727272;
+    text-align: center;
+    line-height: 26px;
+}
+
+.sponsor-company{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sponsor-company img{
+    padding: 50px;
+    width: 165.833px;
+    height: 50px;
+}
+/* sponsor sec end */
 /* end main sec style */
 
-
+/* footer style start */
+footer{
+    width: 1440px;
+    height: 100px;
+    border-radius: 8px;
+    background: #FFF4E7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-desc{
+    color: #424242;
+    text-align: center;
+    font-size: 20px;
+}
+/* footer style end */
 
 
 /* responsive style */
