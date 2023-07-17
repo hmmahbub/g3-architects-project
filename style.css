@@ -138,7 +138,7 @@ main{
     align-items: center;
 }
 .features{
-    
+    width: 100%;
 }
 .features-column{
     margin-right: 35px;
@@ -148,6 +148,8 @@ main{
     color: #131313;
     font-size: 40px;
     font-weight: 700;
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
 }
 .features-desc{
     width: 450px;
@@ -173,12 +175,40 @@ main{
     color: #727272;
     line-height: 26px;
 }
+
 .features-photos{
- 
+    position: relative;
 }
 .features-photos img{
     width: 600px;
-    height: auto;
+    height: 100%;
+    margin: 100px auto 0 50px;
+}
+.btn-primary-2{
+    width: 250px;
+    height: 150px;
+    border-radius: 8px;
+    background: #FF900E;
+    position: absolute;
+    top: 90%;
+    left: 0;
+    border: none;
+}
+.btn-primary-2 h2{
+    color: #FFF;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+.btn-primary-2 p{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
 }
 /* features sec end */
 
@@ -186,9 +216,7 @@ main{
 /* card sec start */
 .facts{
     width: 520px;
-    margin-top: 150px;
-    margin-left: 100px;
-    margin-bottom: 100px;
+    margin: 150px auto 100px 100px;
 }
 .facts-title{
     color: #131313;
@@ -345,12 +373,21 @@ footer{
 }
 
 .features-photos img{
-    width: 350px;
-    height: auto;
+    width: 100%;
+    height: 100%;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+
+.btn-primary-2{
+    width: 200px;
+    height: 100px;
+    left: 0;
 }
     .facts{
             width: 300px;
-            margin: 0 auto;
+            margin: 50px auto;
     }
     .card-container{
         flex-direction: column;
@@ -370,12 +407,20 @@ footer{
 }
 
 /* tablet devices */
-@media screen and (min-width: 576px) and (max-width: 960px) {
+ @media screen and (min-width: 576px) and (max-width: 960px) {
     header{
         padding: 50px;
     }
     nav{
         flex-direction: column;
+    }
+    .banner img{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .banner-title{
+        font-size: 3.5rem;
     }
     main{
         margin-bottom: 0;
@@ -383,17 +428,19 @@ footer{
     .teams-container{
         flex-direction: column;
     }
+    .teams-img-container{
+        margin: 0 auto;
+    }
     .teams-content{
         text-align: center;
     }
     .btn-primary{
-        margin-right: 100px;
+        margin-right: 50px;
     }
 
     .features-sec-container{
         flex-direction: column;
         margin-top: 20px;
-        margin-right: 80px;
     }
     .features-title{
         width: 300px;
@@ -404,21 +451,27 @@ footer{
         line-height: 26px;
     }
 .features-pera{
-    width: 400px;
+    width: 350px;
     height: auto;
 }
 
 .features-pera p{
-    width: 350px;
+    width: 400px;
 }
-
 .features-photos img{
     width: 500px;
     height: auto;
+    margin-top: 50px;
+    margin-left: 20;
 }
+
+.btn-primary-2{
+    width: 250px;
+    height: 120px;
+}
+
     .facts{
             width: 450px;
-            margin: 0 auto;
     }
     .card-container{
         flex-direction: column;
@@ -432,11 +485,12 @@ footer{
     }
     footer{
         width: 100%;
-        height: auto;
+        height: 100px;
     }
     .footer-desc{
+        margin: 0 auto;
         font-size: 1.2rem;
     }
-
 }
+
 /* end style */
